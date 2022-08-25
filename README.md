@@ -1,14 +1,14 @@
- 라이브러리
+## 카드 순위 데이터 분석 라이브러리
 
 ├── crawler
 
-│   ├── news.py
+│   ├── chart_TOP100.py
 
-│   ├── blog.py
+│   ├── chart_check.py
 
-│   ├── finance.py
+│   ├── chart_benefit.py
 
-│   └── twitter.py
+│   └── blog.py
 
 ├── database
 
@@ -26,22 +26,20 @@
 
 ├── rpa
 
-│   ├── mail
+│   ├── web
 
 │   ├──   └── gmail.py
 
-│   ├── messenger
-
 │   └──   └── telegram.py
 
-├── utils
 
-│   └── file_manager.py
+# crawler
+chart_TOP100.py : 신용카드 월별순위 크롤러
 
-└── sosin.py
-crawler
-news.py : 네이버 뉴스 크롤러
+chart_check.py : 체크카드 월별순위 크롤러
 
-blog.py : 네이버 블로그 크롤러, 티스토리 블로그 크롤러
+chart_benefit.py : 인기혜택별 순위 크롤러
 
-finance.py : 금융정보 크롤러, 전자 공시 크롤러
+blog.py : 네이버 블로그 카드 정보
+
+
