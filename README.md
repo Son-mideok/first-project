@@ -1,14 +1,16 @@
-## 카드 순위 데이터 분석 라이브러리
+## 스페인 여행 라이브러리
 
 ├── crawler
 
-│   ├── chart_TOP100.py
+│   ├── wikipedia_spain.py
 
-│   ├── chart_check.py
+│   ├── rate_EUR.py
 
-│   ├── chart_benefit.py
+│   ├── safety_info_api.py
 
-│   └── blog.py
+│   ├── worldtrip_ebs_spain 
+
+│   └── flight_spain.py.py
 
 ├── database
 
@@ -34,12 +36,17 @@
 
 
 # crawler
-chart_TOP100.py : 신용카드 월별순위 크롤러
+wikipedia_spain.py : 위키피디아 스페인 검색페이지 크롤러
 
-chart_check.py : 체크카드 월별순위 크롤러
+rate_EUR.py : 유럽연합 실시간 환율 크롤러
 
-chart_benefit.py : 인기혜택별 순위 크롤러
+safety_info_api.py : 외교부 안전정보 공공데이터 api 크롤러
 
-blog.py : 네이버 블로그 카드 정보
+worldtrip_ebs_spain : 세계테마기행 스페인편 크롤러 (Selenium)
+
+flight_spain.py : 네이버 항공권 크롤러 (Selenium)
+
+
+# database
 
 
