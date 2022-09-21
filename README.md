@@ -1,16 +1,16 @@
-## 스페인 여행 라이브러리
+## 🇪🇸 🎶 스페인 여행 라이브러리 📸🍹
 
 ├── crawler
 
-│   ├── wikipedia_spain.py
+│   ├── doopedia_spain.py
 
 │   ├── rate_EUR.py
 
 │   ├── safety_info_api.py
 
-│   ├── worldtrip_ebs_spain 
+│   ├── worldtrip_ebs 
 
-│   └── flight_spain.py.py
+│   └── flight_spain.py
 
 ├── database
 
@@ -36,7 +36,7 @@
 
 
 # crawler
-wikipedia_spain.py : 위키피디아 스페인 검색페이지 크롤러
+doopedia_spain.py : 네이버 두산백과 스페인 검색페이지 크롤러
 
 rate_EUR.py : 유럽연합 실시간 환율 크롤러
 
