@@ -1,3 +1,16 @@
+# 메일할지 말지
+
+import smtplib
+
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from email.mime.base import MIMEBase
+from email import encoders
+
+
+import requests
+from bs4 import BeautifulSoup
+
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.by import By
@@ -8,6 +21,30 @@ from webdriver_manager.chrome import ChromeDriverManager
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
 from re import search
+
+
+
+# 네이버 스페인 백과사전 크롤링
+URL = 'https://terms.naver.com/entry.naver?docId=1125333&cid=40942&categoryId=34081'
+response = requests.get(URL)
+soup =BeautifulSoup(response.text, 'html.parser')
+
+spain_tbody = soup.select_one('tbody')
+trs = spain_tbody.select('tr')
+
+spain_result = {}
+
+for tr in trs:
+
+    spain_title = tr.select('th > span')[0].text.strip()
+    spain_data = tr.select('td')[0].text.strip()
+    
+    spain_result.setdefault(spain_title, spain_data)
+
+print(spain_result)
+
+
+# 세계테마기행 셀레니움
 
 
 url = 'https://worldtrip.ebs.co.kr/worldtrip/main'
@@ -55,3 +92,14 @@ for element in elements:
     vod_list.append(temp)
 
 print(vod_list)
+
+
+#C:\Users\virtue\Desktop\virtue_package\newsletter.html 경로 파악하기
+/home/ubuntu/project/template/dailyfood.html
+
+file = open("", "w", encoding= 'utf-8')
+string = '''<body style="background-color:#2D2D2D;">
+
+
+file.write(string + div)
+file.close()
