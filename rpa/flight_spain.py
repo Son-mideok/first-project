@@ -39,7 +39,6 @@ def flight(departure, arrival_date):
 
     wait_until('//i[contains(text(), "바르셀로나")]')
     spain_BCN = browser.find_element(By.XPATH, '//i[contains(text(), "바르셀로나")]')
-    spain_BCN
     spain_BCN.click()
 
     wait_until('//span[contains(text(), "항공권 검색")]')
@@ -49,4 +48,4 @@ def flight(departure, arrival_date):
     elem = WebDriverWait(browser, 30).until(EC.presence_of_element_located((By.XPATH,
     '//div[@class="concurrent_ConcurrentItemContainer__2lQVG result"]')))  # 어짜피 로딩끝나고 대기니깐 def 안씀
 
-    return print(elem.text)
+    return elem
