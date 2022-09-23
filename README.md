@@ -6,30 +6,16 @@
 
 │   ├── worldtrip_ebs.py
 
-│   └── flight_spain_api.py
-
-
-├── database
-
-│   ├── nosql.py
-
-│   └── rdb.py
-
-├── processing
-
-│   ├── text.py
-
-│   ├── data.py
-
-│   └── image.py
+│   └── flight_spain.py
 
 ├── rpa
 
-│   ├── web
+│ └── telegram.py
 
-│   └── gmail.py
+├── template
 
-│   └── telegram.py
+│ └── newsletter.html
+
 
 
 # crawler
@@ -40,6 +26,14 @@ worldtrip_ebs_spain : 세계테마기행 스페인편 크롤러 (Selenium)
 flight_spain.py : 네이버 항공권 크롤러 (Selenium)
 
 
-# database
+# rpa
+
+spain_telegram.py : 네이버 스페인 검색페이지 크롤링 텔레그램 전송
+
+# template
+
+newsletter.html : 스페인 여행정보 뉴스레터 HTML
+
+
 
 
