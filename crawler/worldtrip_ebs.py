@@ -1,3 +1,10 @@
+
+'''
+3. EBS 세계테마기행 크롤링(셀레니움)
+'''
+
+#Select 모듈추가 후 Select() 함수사용
+
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.by import By
@@ -12,6 +19,10 @@ from re import search
 
 url = 'https://worldtrip.ebs.co.kr/worldtrip/main'
 driver.get(url)
+
+
+# 파이썬 셀레니움 드롭다운 박스 선택
+# 셀레니움 드롭다운 select tag xpath로 크롤링 
 
 driver.implicitly_wait(3)
 dropdown = Select(driver.find_element(By.ID,'catgry1'))  #정렬기준 드롭다운
@@ -54,4 +65,4 @@ for element in elements:
 
     vod_list.append(temp)
 
-print(vod_list)
+vod_list
