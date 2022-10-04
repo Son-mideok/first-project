@@ -28,7 +28,7 @@ flight_spain.py : 네이버 항공권 크롤러 (Selenium)
 
 # rpa
 
-spain_telegram.py : 네이버 스페인 검색페이지 크롤링 텔레그램 전송
+naver_telegram.py : 네이버 스페인 검색페이지 크롤링 텔레그램 전송
 
 # template
 
